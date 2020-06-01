@@ -1,0 +1,195 @@
+#mainmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+
+.headerelements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 30%;
+}
+
+#menuelements{
+    font-size: large;
+    text-align: left;
+    padding-top: 9px;
+}
+
+a{
+    color: #1d04fad8;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+.applybutton {
+    font-size: large;
+    padding: 8px 18px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: white; 
+    color:#1d04fad8;
+    border: 2px solid #0084ff80;  
+    border-radius: 10px;
+    
+
+}
+.applybutton:hover {
+    background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
+    color: white;
+    box-shadow: 0px 1px 0px 0px rgba(8, 142, 252, 0.459);
+    border: 2px solid white;  
+}
+
+
+
+.mainheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.courses-section{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(80, 156, 255, 0.445);
+}
+
+.courses-section-banner{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.courses-list-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin: 0% 12%;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.courses-list{
+    border: 2px solid rgba(0, 0, 0, 0.288);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);;
+    width: 30%;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin: 40px;
+    background: white;
+}
+
+.courses-list:hover {
+    border: 2px solid rgba(0, 0, 0, 0.288);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);;
+    width: 30%;
+    margin: 40px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+}
+
+.courses-list-image{
+    padding: 10%;
+    background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
+    border-radius: 20px;
+}
+
+.courses-list-image:hover{
+    background-image: linear-gradient(to left, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 2%;
+    background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
+    /* border: 10px double rgba(47, 1, 252, 0.397); */
+
+
+}
+
+.box_item{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.603);
+    padding: 20px;
+    border: 10px double rgba(47, 1, 252, 0.555);
+    box-shadow: 0px 10px 10px 0px rgba(57, 44, 238, 0.479);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.box_item:hover{
+    font-size: 0;
+    border: 2px solid rgba(0, 0, 0, 0.288);
+    box-shadow: 0px 20px 20px 0px rgba(255, 255, 255, 0.233);
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgba(42, 31, 199, 0.644);
+}
+
+.box_item:hover::after{
+    content: attr(data-hover);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+#footermenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    background-color: rgb(46, 45, 45);
+  }
+
+  .socialmedia-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding-top: 0.8%;
+    padding-right: 0.5%;
+  }
+
+.footerlogo{
+    padding-top: 0.8%;
+    padding-right: 0.5%;
+}
+
+.copyright-section{
+    text-align: center;
+    width: 40%;
+    padding-top: 8px;
+    color: white;
+}
+
+a.footer-link{
+    color: rgba(53, 152, 245, 0.795);
+}
