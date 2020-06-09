@@ -65,7 +65,7 @@ a:active{
     text-align: center;
     margin: 20px;
     font-family: 'Nunito', sans-serif;
-    background-color: rgba(80, 156, 255, 0.445);
+    /* background-color: #509cff71; */
 }
 
 .courses-section-banner{
@@ -101,6 +101,7 @@ a:active{
     margin: 40px;
     border-radius: 20px;
     transition-duration: 0.5s;
+    box-shadow: 0px 10px 20px 0px inset rgba(26, 25, 25, 0.233);
 }
 
 .courses-list-image{
@@ -114,51 +115,7 @@ a:active{
     
 }
 
-.box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 2%;
-    padding: 2%;
-    background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
-    /* border: 10px double rgba(47, 1, 252, 0.397); */
 
-
-}
-
-.box_item{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
-    font-weight: 800;
-    color: rgba(255, 255, 255, 0.603);
-    /* padding: 20px; */
-    border: 10px double rgba(47, 1, 252, 0.555);
-    box-shadow: 0px 10px 10px 0px rgba(57, 44, 238, 0.479);
-    margin: 10px;
-    border-radius: 20px;
-}
-
-.box_item:hover{
-    font-size: 0;
-    border: 2px solid rgba(0, 0, 0, 0.288);
-    box-shadow: 0px 20px 20px 0px rgba(255, 255, 255, 0.233);
-    margin: 10px;
-    border-radius: 20px;
-    background-color: rgba(42, 31, 199, 0.644);
-}
-
-.box_item:hover::after{
-    content: attr(data-hover);
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 200;
-    text-align: center;
-}
 
 
 #footermenu{
@@ -167,7 +124,7 @@ a:active{
     justify-content: space-between;
     font-family: 'Nunito', sans-serif;
     color: black;
-    background-color: rgb(46, 45, 45);
+    background-color: #ffffff;
   }
 
   .socialmedia-section{
@@ -176,6 +133,7 @@ a:active{
     justify-content: space-between; 
     padding-top: 0.8%;
     padding-right: 0.5%;
+    width: 10%;
   }
 
 .footerlogo{
@@ -187,9 +145,33 @@ a:active{
     text-align: center;
     width: 40%;
     padding-top: 8px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 a.footer-link{
-    color: rgba(53, 152, 245, 0.795);
+    color: rgba(32, 18, 231, 0.897);
 }
+
+#footer{
+    background-color: #3686E5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    padding: 2%;
+}
+
+.footerwhatelse{
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
