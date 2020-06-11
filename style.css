@@ -85,7 +85,7 @@ a:active{
 
 .courses-list{
     border: 2px solid rgba(0, 0, 0, 0.288);
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);
     width: 30%;
     padding: 40px;
     border-radius: 20px;
@@ -96,7 +96,6 @@ a:active{
 
 .courses-list:hover {
     border: 2px solid rgba(0, 0, 0, 0.288);
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);;
     width: 30%;
     margin: 40px;
     border-radius: 20px;
@@ -166,6 +165,32 @@ a.footer-link{
     width: 40%;
 }
 
+.Whysection {
+    /* border: 2px solid black; */
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.whyheading{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    /* border: 2px solid black; */
+}
+
+.practicalsection{
+    /* border: 2px solid rgba(0, 0, 0, 0.288); */
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);
+    padding: 40px;
+    /* border-radius: 20px; */
+    font-family: 'Nunito', sans-serif;
+    margin: 40px;
+    background: rgb(235, 235, 235);
+    text-align: center;
+}
 
 
 
