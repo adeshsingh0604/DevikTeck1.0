@@ -42,8 +42,7 @@ a:active{
     color:#1d04fad8;
     border: 2px solid #0084ff80;  
     border-radius: 10px;
-    
-
+    font-family: 'Nunito', sans-serif;
 }
 .applybutton:hover {
     background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
@@ -52,7 +51,95 @@ a:active{
     border: 2px solid white;  
 }
 
+.secondbutton {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    padding: 8px 18px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: #3686E6; 
+    color:#ffffff;
+    border: 2px solid #0084ff80;  
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    
 
+}
+.secondbutton:hover {
+    background-color: white;
+    color: #3686E6;
+    border: 2px solid #3685e6c2;  
+}
+
+
+.mainarea{
+    background-image: url("images/MainImage.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    /* padding-left: 20%; */
+    border: 2px solid rgba(0, 0, 0, 0);
+    height: 530px;
+
+}
+
+.mainareaheading{
+    font-family: 'Nunito', sans-serif;
+    /* border: 2px solid black; */
+    width: 60%;
+    margin-top: 100px;
+    margin-left: 190px;
+    
+}
+
+.bestheading{
+    font-weight: 800;
+    font-size: 36px;
+    position: absolute;
+    left: 199px;
+    top: 140px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.futureheading{
+    position: absolute;
+    height: 79.22px;
+    left: 199px;
+    top: 180px;
+    font-weight: 800;
+    font-size: 48px; 
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.para{
+    position: absolute;
+    left: 199px;
+    top: 280px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    width: 60%;
+    color: rgba(0, 0, 0, 0.822);
+}
+
+.areyouheading{
+    position: absolute;
+    left: 199px;
+    top: 380px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+
+.mainareabutton{
+    position: absolute;
+    left: 199px;
+    top: 451px;
+}
 
 .mainheader{
     display: flex;
@@ -65,7 +152,7 @@ a:active{
     text-align: center;
     margin: 20px;
     font-family: 'Nunito', sans-serif;
-    /* background-color: #509cff71; */
+    background-color: #509cff71;
 }
 
 .courses-section-banner{
