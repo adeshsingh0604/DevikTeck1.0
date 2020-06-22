@@ -1,3 +1,4 @@
+
 #mainmenu{
     display: flex;
     flex-direction: row;
@@ -5,6 +6,10 @@
     box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
     font-family: 'Nunito', sans-serif;
     color: black;
+    /* position: absolute; */
+    /* border: 2px solid black; */
+    /* width: 195vh; */
+    /* background-color: #C4EFF6; */
 }
 
 
@@ -12,10 +17,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    width: 30%;
+    width: 40%;
+    /* border: 2px solid black; */
+    /* background-color: #F7E9A0; */
 }
 
-#menuelements{
+.menuelements{
     font-size: large;
     text-align: left;
     padding-top: 9px;
@@ -23,6 +30,11 @@
 
 a{
     color: #1d04fad8;
+}
+
+.menuelements a:hover{
+  /* color: #000000; */
+  border-bottom: 3px solid rgba(0, 102, 255, 0.815);
 }
 
 a:link{
@@ -33,111 +45,317 @@ a:active{
     text-decoration: none;
 }
 
+.applybuttonheader{
+  font-size: large;
+    padding: 8px 18px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0); 
+    color:#1d04fad8;
+    border: 2px solid #0084ff80;  
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    /* padding-right: 20px; */
+    cursor: pointer;
+
+}
+
+.applybuttonheader:hover{
+  background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
+  color: white;
+  box-shadow: 0px 1px 0px 0px rgba(8, 142, 252, 0.459);
+  border: 2px solid white;
+}
+
 .applybutton {
     font-size: large;
     padding: 8px 18px;
     transition-duration: 0.3s;
     cursor: pointer;
     background-color: white; 
-    color:#1d04fad8;
-    border: 2px solid #0084ff80;  
+    color: black;
+    border: 2px solid gray;  
     border-radius: 10px;
     font-family: 'Nunito', sans-serif;
 }
 .applybutton:hover {
-    background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
     color: white;
+    background-color: rgb(63, 63, 63);
     box-shadow: 0px 1px 0px 0px rgba(8, 142, 252, 0.459);
     border: 2px solid white;  
 }
 
-.secondbutton {
-    font-family: 'Nunito', sans-serif;
-    font-size: large;
-    padding: 8px 18px;
-    transition-duration: 0.3s;
-    cursor: pointer;
-    background-color: #3686E6; 
-    color:#ffffff;
-    border: 2px solid #0084ff80;  
-    border-radius: 10px;
-    /* padding-left: 10px; */
-    
-
-}
-.secondbutton:hover {
-    background-color: white;
-    color: #3686E6;
-    border: 2px solid #3685e6c2;  
-}
-
-
 .mainarea{
-    background-image: url("images/MainImage.png");
+    background-image: url("images/bgTablet.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0);
-    height: 530px;
-
+    height: 750px;
 }
 
-.mainareaheading{
+.animated-text{
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito';
+    position: absolute;
+    top: 80%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    background: #272727;
+    padding: 0 40px;
+    height: 60px;
+    overflow: hidden;
+    /* border: 2px double white; */
+  }
+  
+  .line{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  
+  .line:first-child{
+    animation: anim 20s infinite;
+  }
+  
+  @keyframes anim {
+    0%{
+      margin-top: 0;
+    }
+    10%{
+      margin-top: -60px;
+    }
+    20%{
+      margin-top: -120px;
+    }
+    30%{
+      margin-top: -180px;
+    }
+    40%{
+      margin-top: -240px;
+    }
+    50%{
+      margin-top: -300px;
+    }
+    60%{
+      margin-top: -240px;
+    }
+    70%{
+      margin-top: -180px;
+    }
+    80%{
+      margin-top: -120px;
+    }
+    90%{
+      margin-top: -60px;
+    }
+    100%{
+      margin-top: 0;
+    }
+  }
+
+.mainAreaTitle{
+    position: absolute;
     font-family: 'Nunito', sans-serif;
     /* border: 2px solid black; */
-    width: 60%;
-    margin-top: 100px;
-    margin-left: 190px;
-    
+    width: 22%;
+    top: 67%;
+    left: 40%;
+    text-align: center;
+    color: #ffffff;
 }
 
-.bestheading{
-    font-weight: 800;
-    font-size: 36px;
+.mainAreaPara{
     position: absolute;
-    left: 199px;
-    top: 140px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+    /* border: 2px solid black; */
+    width: 22%;
+    top: 83%;
+    left: 40%;
+    text-align: center;
+    color: #ffffff;
 }
 
-.futureheading{
+.Cplus{
     position: absolute;
-    height: 79.22px;
-    left: 199px;
-    top: 180px;
-    font-weight: 800;
-    font-size: 48px; 
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    top: 55%;
+    left: 5%;
+    /* transform: rotate(-10deg); */
+    /* animation: Cplus 2s linear infinite; */
 }
 
-.para{
-    position: absolute;
-    left: 199px;
-    top: 280px;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.02em;
-    width: 60%;
-    color: rgba(0, 0, 0, 0.822);
+@keyframes Cplus {
+    100%{
+      transform: translateY(-5px);
+    }
+    50%{
+      transform: translateY(5px);
+    }
+    0%{
+      transform: translateY(-5px);
+    }
 }
 
-.areyouheading{
+.C{
     position: absolute;
-    left: 199px;
-    top: 380px;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 0.02em;
+    top: 55%;
+    left: 17%;
+    /* transform: rotate(10deg); */
 }
 
-.mainareabutton{
+.html{
     position: absolute;
-    left: 199px;
-    top: 451px;
+    top: 56%;
+    right: 5%; 
+    /* transform: rotate(10deg); */
+    /* animation: Cplus 2s linear infinite; */
+}
+
+.js{
+    position: absolute;
+    top: 56%;
+    right: 15%;
+    /* transform: rotate(10deg); */
+    /* animation: Cplus 2s linear infinite; */
+}
+
+.python{
+    position: absolute;
+    top: 56%;
+    right: 26%;
+    /* transform: rotate(10deg); */
+    /* animation: Cplus 2s linear infinite; */
+}
+
+.node{
+    position: absolute;
+    top: 55%;
+    left: 28%;
+    /* transform: rotate(-10deg); */
+    /* animation: Cplus 2s linear infinite; */
+}
+
+.Aboutus{
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  /* animation: Cplus 2s linear infinite; */
+  width: 120px;
+  height: 120px;
+  border-style: none;
+  /* font: x-large; */
+  font-size: x-large;
+  border-radius: 50%;
+  color: white;
+  /* background-image: linear-gradient(to right, rgba(49, 30, 214, 0.623), rgba(28, 151, 223, 0.856)); */
+  background-color: rgb(94, 94, 230);
+  position: absolute;
+  animation: Cplus 2s linear infinite;
+  /* box-shadow: none; */
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);
+
+}
+
+.Contactus{
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  animation: Cplus 2s linear infinite;
+  width: 120px;
+  height: 120px;
+  border-style: none;
+  /* font: x-large; */
+  font-size: 20px;
+  border-radius: 50%;
+  color: white;
+  /* background-image: linear-gradient(to right, rgba(49, 30, 214, 0.623), rgba(28, 151, 223, 0.856)); */
+  background-color: rgb(94, 94, 230);
+  position: absolute;
+  animation: Cplus 2s linear infinite;
+  /* box-shadow: none; */
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);
+
+}
+
+.Intership{
+  position: absolute;
+  top: 35%;
+  right: 24%;
+  width: 120px;
+  height: 120px;
+  border-style: none;
+  font-size: x-large;
+  border-radius: 50%;
+  color: white;
+  /* background-image: linear-gradient(to right, rgba(49, 30, 214, 0.623), rgba(28, 151, 223, 0.856)); */
+  background-color: rgb(94, 94, 230);
+  position: absolute;
+  animation: Cplus 2s linear infinite;
+  /* box-shadow: none; */
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);
+
+}
+
+.Applynow{
+    position: absolute;
+    top: 78%;
+    right: 13%;
+    width: 120px;
+    height: 120px;
+    border-style: none;
+    font-size: x-large;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(94, 94, 230);
+    position: absolute;
+    animation: Cplus 2s linear infinite;
+    /* box-shadow: none;  */
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);
+    /* transition: width ; */
+
+}
+
+/* .Applynow:hover{
+  width: 151px;
+  height: 15px;
+} */
+
+.testimonial{
+  width: 120px;
+  height: 120px;
+  border-style: none;
+  font-size: 22px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(94, 94, 230);
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  animation: Cplus 2s linear infinite;
+  /* box-shadow: none; */
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.233);
+  transition: width ;
+
+}
+
+/* .testimonial:hover{
+  background-color: blueviolet;
+  transform: scale(2);
+  width: 125px;
+  height: 125px;
+  text-align: center;
+} */
+
+#mainareaCourses button:hover{
+  background-color: blueviolet;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+}
+
+#mainareaCourses img:hover{
+  transform: scale(2);  
 }
 
 .mainheader{
@@ -152,12 +370,15 @@ a:active{
     /* margin: 20px; */
     width: 100%;
     font-family: 'Nunito', sans-serif;
-    background-color: #509cff71;
+    background-color: #dbdbdb81;
 }
 
 .courses-section-banner{
-    margin: 10px;
-    padding: 10px;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    /* border: 2px solid black; */
+    font-size: large;
+    padding-top: 20px;
 }
 
 
@@ -167,6 +388,8 @@ a:active{
     margin-top: 2%;
     margin: 0% 12%;
     font-family: 'Nunito', sans-serif;
+    /* border: 2px solid black; */
+
     
 }
 
@@ -188,18 +411,21 @@ a:active{
     border-radius: 20px;
     transition-duration: 0.5s;
     box-shadow: 0px 10px 20px 0px inset rgba(26, 25, 25, 0.233);
+    background-color: rgb(63, 63, 63);
+    color: white;
 }
 
 .courses-list-image{
     padding: 10%;
-    background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
+    /* background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849)); */
+    border: 2px solid grey;
     border-radius: 20px;
 }
 
-.courses-list-image:hover{
+/* .courses-list-image:hover{
     background-image: linear-gradient(to left, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
     
-}
+} */
 
 
 
@@ -278,6 +504,8 @@ a.footer-link{
     background: rgb(235, 235, 235);
     text-align: center;
 }
+
+
 
 
 
